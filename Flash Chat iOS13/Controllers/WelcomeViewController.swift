@@ -16,11 +16,11 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = "⚡️FlashChat"
+        titleLabel.text = Constants.appName
 
         titleLabel.text = ""
         var characterIndex = 0.0
-        let titleText = "⚡️FlashChat"
+        let titleText = Constants.appName
         for lettet in titleText {
             Timer.scheduledTimer(withTimeInterval: 0.1 * characterIndex, repeats: false) { (timer) in
                 self.titleLabel.text?.append(lettet)
